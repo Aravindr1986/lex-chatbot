@@ -22,6 +22,11 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lex"
+    },
+    "lex77acc87e": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lex"
     }
   }
 }
