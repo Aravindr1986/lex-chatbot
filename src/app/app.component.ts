@@ -1,13 +1,19 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+// src/app/app.component.ts
+
+import { Component, OnInit } from '@angular/core';
+import { AmplifyService } from 'aws-amplify-angular';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'lex-chatbot-app';
+export class AppComponent implements OnInit {
+  constructor(private amplifyService: AmplifyService) {}
+
+  ngOnInit() {
+    this.amplifyService.auth().currentAuthenticatedUser().then(user => {
+      console.log(user);
+    }).catch(err => console.log(err));
+  }
 }
