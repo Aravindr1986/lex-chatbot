@@ -10,6 +10,11 @@
       "StackName": "amplify-lexchatbot-dev-74225",
       "StackId": "arn:aws:cloudformation:us-east-1:387627065927:stack/amplify-lexchatbot-dev-74225/320a7190-bb7f-11ee-b42b-121aa50a1f93",
       "AmplifyAppId": "d1u2jxc8wnhnfa"
+    },
+    "categories": {
+      "auth": {
+        "lexchatbot": {}
+      }
     }
   }
 }
