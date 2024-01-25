@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "lexchatbot": {}
+      },
+      "interactions": {
+        "lexbotdemo": {
+          "deploymentBucketName": "amplify-lexchatbot-dev-74225-deployment",
+          "s3Key": "amplify-builds/lexbotdemo-56316d52723873503654-build.zip"
+        }
       }
     }
   }
