@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Amplify } from '@aws-amplify'
-import aws_exports from './aws-exports'
+import { Amplify } from 'aws-amplify';
+import awsmobile from './aws-exports'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-Amplify.configure(aws_exports)
+
+Amplify.configure(awsmobile);
+
 @NgModule({
   declarations: [
     AppComponent

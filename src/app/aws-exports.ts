@@ -17,7 +17,7 @@ const awsmobile = {
     "aws_bots": "enable",
     "aws_bots_config": [
         {
-            "name": "BookTrip_dev",
+            "name": "lexbotdemo",
             "alias": "$LATEST",
             "region": "us-east-1"
         }
