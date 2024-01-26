@@ -19,11 +19,13 @@ export class AppComponent implements OnInit {
 
   async startChat() {
     // Provide a bot name and user input
+    
     this.conversation = this.conversation + "\nYou::" + this.message;
-    var response = await Interactions.send({botName: "lexbotdemo", message:this.message});
-
+    try{
+      var response = await Interactions.send({botName: "lexbotdemo", message:this.message});
+         console.log("Here")
     // Log chatbot response
-    console.log(response);
+    console.log("Response : "+response);
 
     this.message = '';
 
@@ -34,5 +36,7 @@ export class AppComponent implements OnInit {
     if (response ) {
       this.conversation = this.conversation + "\nBot::" + "Your Hotel Room Booking is complete.";
     }
+    }catch(error){console.log("error:"+ error)}
+    
   }
 }
