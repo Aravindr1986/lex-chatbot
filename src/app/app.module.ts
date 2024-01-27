@@ -12,9 +12,9 @@ Amplify.configure({
   Interactions: {
     LexV2: {
       'lexbotdemo': {
-        aliasId: '$LATEST',
+        aliasId: 'TSTALIASID',
         botId: 'GTXHHEYCGP',
-        localeId: '<V2BotLocaleId>',
+        localeId: 'en_US',
         region: 'us-east-1'
       }
     }
