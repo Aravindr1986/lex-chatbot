@@ -7,7 +7,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 Amplify.configure(awsmobile);
-
+Amplify.configure({
+  ...Amplify.getConfig(),
+  Interactions: {
+    LexV2: {
+      'lexbotdemo': {
+        aliasId: '$LATEST',
+        botId: 'GTXHHEYCGP',
+        localeId: '<V2BotLocaleId>',
+        region: 'us-east-1'
+      }
+    }
+  }
+});
 @NgModule({
   declarations: [
     AppComponent
