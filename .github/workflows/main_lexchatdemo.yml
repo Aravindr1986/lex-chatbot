@@ -65,6 +65,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'lexchatdemo'
-          slot-name: 'Production'
-          package: .
+          package: ./dist/lex-chatbot
           
