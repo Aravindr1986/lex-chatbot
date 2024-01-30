@@ -65,5 +65,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'lexchatdemo'
-          package: ./dist/lex-chatbot
+          package: ./dist/angular-chatbot-example
           
