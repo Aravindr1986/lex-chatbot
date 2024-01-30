@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- Include the chatbot code here -->
- <script src="https://dkgwgok9wilt9.cloudfront.net/lex-web-ui-loader.min.js"></script>
+ <!-- <script src="https://dkgwgok9wilt9.cloudfront.net/lex-web-ui-loader.min.js"></script>
  <script>
    console.log("Here is the error")
    var loaderOpts = {
@@ -20,7 +20,20 @@
    var chatbotUiConfig = {};
    loader.load(chatbotUiConfig)
      .catch(function (error) { console.log(error); });
+ </script> -->
+ <script src="https://d30xaihov99633.cloudfront.net/lex-web-ui-loader.min.js"></script>
+ <script>
+   var loaderOpts = {
+     baseUrl: 'https://d30xaihov99633.cloudfront.net/',
+     shouldLoadMinDeps: true
+   };
+   var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+   var chatbotUiConfig = {};
+   loader.load(chatbotUiConfig)
+     .catch(function (error) { console.error(error); });
  </script>
+
+
   <app-root></app-root>
 </body>
 </html>
